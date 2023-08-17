@@ -1,0 +1,36 @@
+{
+    "namespace": {
+        "name": "slmpalmero",
+        "version": 1
+    },
+    "kind": "entity",
+    "name": "device",
+    "displayName": "device",
+    "attributeDefinitions": {
+        "required": [
+            "serialnumber"
+        ],
+        "optimized": [],
+        "attributes": {
+            "name": {
+                "type": "string",
+                "description": "The name of the session"
+            },
+            "serialnumber": {
+                "type": "string",
+                "description": "The serialnumber of the session"
+            },
+            "os": {
+                "type": "string",
+                "description": "The os of the session"
+            }
+        }
+    },
+    "lifecycleConfiguration": {
+        "purgeTtlInMinutes": 4200,
+        "retentionTtlInMinutes": 1440
+    },
+    "metricTypes": [
+        "slmpalmero:batterylevel"
+    ]
+}

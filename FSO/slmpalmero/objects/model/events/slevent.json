@@ -1,0 +1,21 @@
+{
+    "namespace": {
+        "name": "slmpalmero",
+        "version": 1
+    },
+    "kind": "event",
+    "name": "slevent",
+    "displayName": "slevent",
+    "attributeDefinitions": {
+        "attributes": {
+            "type": {
+                "type": "string",
+                "description": "The type of the slevent"
+            },
+            "description": {
+                "type": "string",
+                "description": "The description of the slevent"
+            }
+        }
+    }
+}

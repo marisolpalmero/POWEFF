@@ -1,0 +1,16 @@
+{
+    "namespace": {
+        "name": "slmpalmero",
+        "version": 1
+    },
+    "kind": "resourceMapping",
+    "name": "slmpalmero_device_entity_mapping",
+    "displayName": "Resource mapping configuration for the slmpalmero:device entity",
+    "entityType": "slmpalmero:device",
+    "scopeFilter": "containsAll(resourceAttributes, ['slmpalmero.device.serialnumber'])",
+    "attributeNameMappings": {
+        "name": "slmpalmero.device.name",
+        "os": "slmpalmero.device.os",
+        "serialnumber": "slmpalmero.device.serialnumber"
+    }
+}

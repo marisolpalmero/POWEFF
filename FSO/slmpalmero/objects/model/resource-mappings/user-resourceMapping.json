@@ -1,0 +1,16 @@
+{
+    "namespace": {
+        "name": "slmpalmero",
+        "version": 1
+    },
+    "kind": "resourceMapping",
+    "name": "slmpalmero_user_entity_mapping",
+    "displayName": "Resource mapping configuration for the slmpalmero:user entity",
+    "entityType": "slmpalmero:user",
+    "scopeFilter": "containsAll(resourceAttributes, ['slmpalmero.user.userid'])",
+    "attributeNameMappings": {
+        "age": "slmpalmero.user.age",
+        "name": "slmpalmero.user.name",
+        "userid": "slmpalmero.user.userid"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "kind": "template",
+    "name": "dashui:ecpRelationshipMap",
+    "target": "slmpalmero:device",
+    "view": "default",
+    "element": {
+        "instanceOf": "leftbar",
+        "elements": [
+            {
+                "key": "device",
+                "path": ".",
+                "entityAttribute": "name",
+                "iconName": "AgentType.Appd"
+            }
+        ]
+    }
+}

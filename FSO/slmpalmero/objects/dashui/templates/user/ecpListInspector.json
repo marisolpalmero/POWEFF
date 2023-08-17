@@ -1,0 +1,33 @@
+{
+    "kind": "template",
+    "name": "dashui:ecpListInspector",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "elements",
+        "elements": [
+            {
+                "instanceOf": "focusedEntities",
+                "element": {
+                    "instanceOf": {
+                        "name": "nameWidget"
+                    },
+                    "path": [
+                        "attributes(name)",
+                        "id"
+                    ]
+                },
+                "mode": "SINGLE"
+            },
+            {
+                "instanceOf": "focusedEntities",
+                "element": {
+                    "instanceOf": {
+                        "name": "slmpalmero:userInspectorWidget"
+                    }
+                },
+                "mode": "SINGLE"
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "namespace": {
+            "name": "slmpalmero",
+            "version": 1
+        },
+        "kind": "associationDeclaration",
+        "name": "user_to_device_relationship",
+        "displayName": "Declared Relationship between user and device",
+        "scopeFilter": "true",
+        "fromType": "slmpalmero:user",
+        "toType": "slmpalmero:device",
+        "associationType": "common:consists_of"
+    }
+]

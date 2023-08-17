@@ -1,0 +1,22 @@
+{
+    "kind": "template",
+    "name": "slmpalmero:userDetailsList",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "html",
+        "elements": [
+            {
+                "instanceOf": {
+                    "name": "logsWidget"
+                },
+                "source": "derived_metric"
+            }
+        ],
+        "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": 12
+        }
+    }
+}

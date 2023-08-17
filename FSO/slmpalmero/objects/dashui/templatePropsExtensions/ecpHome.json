@@ -1,0 +1,34 @@
+{
+    "kind": "templatePropsExtension",
+    "id": "slmpalmero:slmpalmeroEcpHomeExtension",
+    "name": "dashui:ecpHome",
+    "view": "default",
+    "target": "*",
+    "requiredEntityTypes": [
+        "slmpalmero:device",
+        "slmpalmero:user"
+    ],
+    "props": {
+        "sections": [
+            {
+                "index": 6,
+                "name": "slmpalmeroCoreSection",
+                "title": "slmpalmero - 1.0.6"
+            }
+        ],
+        "entities": [
+            {
+                "index": 0,
+                "section": "slmpalmeroCoreSection",
+                "entityAttribute": "id",
+                "targetType": "slmpalmero:device"
+            },
+            {
+                "index": 1,
+                "section": "slmpalmeroCoreSection",
+                "entityAttribute": "id",
+                "targetType": "slmpalmero:user"
+            }
+        ]
+    }
+}

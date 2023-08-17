@@ -1,0 +1,13 @@
+{
+    "kind": "template",
+    "name": "dashui:name",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "string",
+        "path": [
+            "attributes(name)",
+            "id"
+        ]
+    }
+}

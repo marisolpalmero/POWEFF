@@ -1,0 +1,52 @@
+{
+    "kind": "template",
+    "name": "slmpalmero:userInspectorWidget",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "elements",
+        "elements": {
+            "instanceOf": {
+                "name": "inspectorWidget"
+            },
+            "elements": {
+                "instanceOf": {
+                    "name": "properties"
+                },
+                "elements": [
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "userid"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(userid)"
+                        }
+                    },
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "name"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(name)"
+                        }
+                    },
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "age"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(age)"
+                        }
+                    }
+                ]
+            },
+            "title": "Properties"
+        }
+    }
+}

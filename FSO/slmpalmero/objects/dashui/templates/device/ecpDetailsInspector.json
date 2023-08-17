@@ -1,0 +1,19 @@
+{
+    "kind": "template",
+    "name": "dashui:ecpDetailsInspector",
+    "target": "slmpalmero:device",
+    "view": "default",
+    "element": {
+        "instanceOf": "elements",
+        "elements": [
+            {
+                "instanceOf": {
+                    "name": "alerting"
+                }
+            },
+            {
+                "instanceOf": "slmpalmero:deviceInspectorWidget"
+            }
+        ]
+    }
+}

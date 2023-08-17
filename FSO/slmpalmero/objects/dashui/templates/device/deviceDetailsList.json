@@ -1,0 +1,53 @@
+{
+    "kind": "template",
+    "name": "slmpalmero:deviceDetailsList",
+    "target": "slmpalmero:device",
+    "view": "default",
+    "element": {
+        "instanceOf": "html",
+        "elements": [
+            {
+                "instanceOf": {
+                    "name": "logsWidget"
+                },
+                "source": "derived_metrics"
+            },
+            {
+                "instanceOf": "card",
+                "props": {
+                    "title": "batterylevel"
+                },
+                "elements": [
+                    {
+                        "instanceOf": "cartesian",
+                        "props": {
+                            "style": {
+                                "height": 250
+                            }
+                        },
+                        "children": [
+                            {
+                                "props": {
+                                    "name": "slmpalmero:batterylevel"
+                                },
+                                "metric": {
+                                    "name": "slmpalmero:batterylevel",
+                                    "source": "fsoc-melt",
+                                    "y": {
+                                        "type": "value"
+                                    }
+                                },
+                                "type": "LINE"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": 12
+        }
+    }
+}

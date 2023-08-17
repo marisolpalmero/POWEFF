@@ -1,0 +1,52 @@
+{
+    "kind": "template",
+    "name": "slmpalmero:deviceInspectorWidget",
+    "target": "slmpalmero:device",
+    "view": "default",
+    "element": {
+        "instanceOf": "elements",
+        "elements": {
+            "instanceOf": {
+                "name": "inspectorWidget"
+            },
+            "elements": {
+                "instanceOf": {
+                    "name": "properties"
+                },
+                "elements": [
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "name"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(name)"
+                        }
+                    },
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "serialnumber"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(serialnumber)"
+                        }
+                    },
+                    {
+                        "label": {
+                            "instanceOf": "text",
+                            "content": "os"
+                        },
+                        "value": {
+                            "instanceOf": "string",
+                            "path": "attributes(os)"
+                        }
+                    }
+                ]
+            },
+            "title": "Properties"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "manifestVersion": "1.0.0",
+    "name": "slmpalmero",
+    "solutionVersion": "1.0.11",
+    "dependencies": [
+        "fmm",
+        "dashui"
+    ],
+    "description": "description of your solution",
+    "contact": "the email for this solution's point of contact",
+    "homepage": "the url for this solution's homepage",
+    "gitRepoUrl": "the url for the git repo holding your solution",
+    "readme": "the url for this solution's readme file",
+    "objects": [
+        {
+            "type": "fmm:namespace",
+            "objectsDir": "objects/model/namespaces"
+        },
+        {
+            "type": "fmm:entity",
+            "objectsDir": "objects/model/entities"
+        },
+        {
+            "type": "fmm:resourceMapping",
+            "objectsDir": "objects/model/resource-mappings"
+        },
+        {
+            "type": "fmm:associationDeclaration",
+            "objectsDir": "objects/model/association-declarations"
+        },
+        {
+            "type": "fmm:metric",
+            "objectsDir": "objects/model/metrics"
+        },
+        {
+            "type": "fmm:event",
+            "objectsDir": "objects/model/events"
+        },
+        {
+            "type": "dashui:templatePropsExtension",
+            "objectsDir": "objects/dashui/templatePropsExtensions"
+        },
+        {
+            "type": "dashui:template",
+            "objectsDir": "objects/dashui/templates/user"
+        },
+        {
+            "type": "dashui:template",
+            "objectsDir": "objects/dashui/templates/device"
+        }
+    ]
+}

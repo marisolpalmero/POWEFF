@@ -1,0 +1,35 @@
+melt:
+- typename: slmpalmero:device
+  attributes:
+    slmpalmero.device.name: "iPhone 13 NEW!"
+    slmpalmero.device.os: "iOS"
+    slmpalmero.device.serialnumber: "XCVYUZZ"
+  metrics: []
+  logs:
+  - body: hello world-0 for an entity of type slmpalmero:device
+    severity: INFO
+    attributes:
+      level: info
+  - body: hello world-1 for an entity of type slmpalmero:device
+    severity: INFO
+    attributes:
+      level: info
+  relationships: []
+  spans: []
+- typename: slmpalmero:user
+  attributes:
+    slmpalmero.user.age: 20
+    slmpalmero.user.name: "Marisolita"
+    slmpalmero.user.userid: "NEW_mpalmero"
+  metrics: []
+  logs:
+  - body: hello world-0 for an entity of type slmpalmero:user
+    severity: INFO
+    attributes:
+      level: info
+  - body: hello world-1 for an entity of type slmpalmero:user
+    severity: INFO
+    attributes:
+      level: info
+  relationships: []
+  spans: []

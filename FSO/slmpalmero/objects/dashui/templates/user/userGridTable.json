@@ -1,0 +1,99 @@
+{
+    "kind": "template",
+    "name": "slmpalmero:userGridTable",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "grid",
+        "rowSets": {
+            "default": {
+                "keyPath": "id"
+            }
+        },
+        "mode": "server",
+        "columns": [
+            {
+                "label": "Health",
+                "flex": 0,
+                "width": 80,
+                "cell": {
+                    "default": {
+                        "instanceOf": {
+                            "name": "health"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "name",
+                "flex": 0,
+                "width": 80,
+                "cell": {
+                    "default": {
+                        "instanceOf": "tooltip",
+                        "truncate": true,
+                        "trigger": {
+                            "instanceOf": "clickable",
+                            "onclick": {
+                                "type": "navigate.entity.detail",
+                                "paths": [
+                                    "id"
+                                ],
+                                "expression": "$ ~> |$|{\"id\": $data[0]}|"
+                            },
+                            "trigger": {
+                                "instanceOf": "string",
+                                "path": [
+                                    "attributes(name)",
+                                    "id"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "label": "age",
+                "flex": 0,
+                "width": 80,
+                "cell": {
+                    "default": {
+                        "instanceOf": "tooltip",
+                        "truncate": true,
+                        "trigger": {
+                            "instanceOf": "string",
+                            "path": [
+                                "attributes(age)"
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "label": "userid",
+                "flex": 0,
+                "width": 80,
+                "cell": {
+                    "default": {
+                        "instanceOf": "tooltip",
+                        "truncate": true,
+                        "trigger": {
+                            "instanceOf": "string",
+                            "path": [
+                                "attributes(userid)"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "onRowSingleClick": {
+            "type": "common.focusEntity",
+            "expression": "{ \"id\": $params.key }"
+        },
+        "onRowDoubleClick": {
+            "type": "navigate.entity.detail",
+            "expression": "{ \"id\": $params.key }"
+        }
+    }
+}

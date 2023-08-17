@@ -1,0 +1,24 @@
+{
+    "kind": "template",
+    "name": "dashui:ecpList",
+    "target": "slmpalmero:device",
+    "view": "default",
+    "element": {
+        "instanceOf": "ocpList",
+        "elements": {
+            "instanceOf": "card",
+            "props": {
+                "style": {
+                    "height": "calc(100% - 298px)",
+                    "padding": 0,
+                    "width": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "instanceOf": "slmpalmero:deviceGridTable"
+                }
+            ]
+        }
+    }
+}

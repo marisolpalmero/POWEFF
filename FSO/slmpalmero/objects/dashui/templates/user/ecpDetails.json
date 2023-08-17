@@ -1,0 +1,15 @@
+{
+    "kind": "template",
+    "name": "dashui:ecpDetails",
+    "target": "slmpalmero:user",
+    "view": "default",
+    "element": {
+        "instanceOf": "ocpSingle",
+        "elements": [
+            {
+                "instanceOf": "slmpalmero:userDetailsList"
+            }
+        ],
+        "nameAttribute": "name"
+    }
+}

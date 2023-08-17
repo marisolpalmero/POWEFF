@@ -1,0 +1,15 @@
+{
+    "namespace": {
+        "name": "slmpalmero",
+        "version": 1
+    },
+    "kind": "metric",
+    "name": "batterylevel",
+    "displayName": "batterylevel",
+    "category": "current",
+    "contentType": "gauge",
+    "aggregationTemporality": "unspecified",
+    "isMonotonic": false,
+    "type": "long",
+    "unit": ""
+}

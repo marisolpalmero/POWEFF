@@ -1,0 +1,18 @@
+melt:
+- typename: slmpalmero:user
+  attributes:
+    slmpalmero.user.age: 18
+    slmpalmero.user.name: "Marisol"
+    slmpalmero.user.userid: "mpalmero"
+  metrics: []
+  logs:
+  - body: hello world-0 for an entity of type slmpalmero:user
+    severity: INFO
+    attributes:
+      level: info
+  - body: hello world-1 for an entity of type slmpalmero:user
+    severity: INFO
+    attributes:
+      level: info
+  relationships: []
+  spans: []
